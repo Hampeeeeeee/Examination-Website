@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsida</title>
+
+    <!-- I head finns all metadata som behövs, men även en font, och en icon. -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -12,8 +15,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!--Hela sidan täcker bakgrunden där en röd bakgrundsfärg har tillagts-->
+
 <body class="helasidan">  
     <main>
+
+        <!--En sidebar tagen från bootstrap. Har själv omkonfiguerat lite. En hover-effekt på menyn
+            samt att man ser vilken sida man är på då namnet och sektionen är highlightad. Hover-effekten fungerar
+            genom att list-elementet har en hover-effekt. Att visa var sökaren befinner sig gjordes genom att
+            flytta bootstraps class "nav-link active" beroende på vilken sida besökaren finner sig på-->
+
+        <!-- I sidebaren finns det även flertalet bilder som gjorts mindre och rundats av med hjälp av
+            border-radius 50%. -->
 
         <div class="Sidebar text-bg-dark">
             <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
@@ -57,25 +70,36 @@
                     <hr>
             </div>
 
+            <!-- Bilden syns i sidebaren och färgen har ett filter som gör att den blir mindre visuell och
+                 mer subtle, dock gör drop-shadow att den får en glänsande bakgrund.  -->
 
             <img src="Images/Liverpool_FC_logo.png" class="LFC-logo-sidebar" alt="Större bild på liverpool logo">
 
-
         </div>
 
+    <!-- Content container som har width 100% för att förhålla sig till viewportens storlek -->
 
-        <div class="content container">
-            <header class="">
-                <nav class="navigation">
-                    <a href="https://www.liverpoolfc.com/" target="_blank"><img src="Images/lfc.png" id="miniLFCHeader" alt="Bild på Liverpools Logo"></a>
-                    <h1>Information och statistik om Liverpool FC's mest bekanta spelare</h1>
-                    <a href="https://www.google.co.uk/maps/place/Anfield+Rd,+Anfield,+Liverpool,+Storbritannien/@53.4312768,-2.9632196,927m/data=!3m1!1e3!4m6!3m5!1s0x487b216546ebb855:0x3a4a7db38db79bb0!8m2!3d53.4318521!4d-2.9609022!16s%2Fg%2F1tfd6hyv?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D" target="_blank"><img src="Images/anfield.jpg" id="anfieldHeader" alt="Bild på Anfield"></a>                  
-                </nav>
-                <div class="underRubrik">
-                    <h2>Liverpool FC's hörnstenar</h2>
-                </div>
-            </header>
+    <div class="content container">
+
+        <!-- Header med en navbar inuti, 2 länkar till diverse sidor när man klickar på bilderna högst upp
+             har en hover-effekt där bakgrunden blir röd för att visa användaren att det går att klicka vidare
+        -->
+
+        <header class="">
+            <nav class="navigation">
+                <a href="https://www.liverpoolfc.com/" target="_blank"><img src="Images/lfc.png" id="miniLFCHeader" alt="Bild på Liverpools Logo"></a>
+                <h1>Information och statistik om Liverpool FC's mest bekanta spelare</h1>
+                <a href="https://www.google.co.uk/maps/place/Anfield+Rd,+Anfield,+Liverpool,+Storbritannien/@53.4312768,-2.9632196,927m/data=!3m1!1e3!4m6!3m5!1s0x487b216546ebb855:0x3a4a7db38db79bb0!8m2!3d53.4318521!4d-2.9609022!16s%2Fg%2F1tfd6hyv?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D" target="_blank"><img src="Images/anfield.jpg" id="anfieldHeader" alt="Bild på Anfield"></a>                  
+            </nav>
+            <div class="underRubrik">
+                <h2>Liverpool FC's hörnstenar</h2>
+            </div>
+        </header>
        
+    <!-- namnDisplay innefattar namn, bakgrund till namn, bildbakgrund, bild, bakgrund till information samt 
+         p-taggar med information. Individuella divs för vardera spelare för att det ska appliceras korrekt 
+         för mobil-användare. -->
+
     <div>
         <div class="namnDisplay">
             <div>
@@ -97,26 +121,24 @@
                 </div>
             </div>
 
-
-                <div>
-                    <div class="TAA66">Trent-Alexander Arnold</div>
-                        <a href="Trentplaceholder.html" class="Trent"><img src="Images/Trent.png" id="TrentMain" alt="Bild på Trent-Alexander Arnold"></a>
-                    <div class="TrentInformation">
-                        <p>
-                            Land: England <img src="Images/England.png" alt="Bild på Englands flagga">
-                        </p>
-                        <p>
-                            Födelsedag: 98/10/07
-                        </p>
-                        <p>
-                            Position: Högerback
-                        </p>
-                        <p>
-                            Debut for LFC: 2016
-                        </p>
-                    </div>
+            <div>
+                <div class="TAA66">Trent-Alexander Arnold</div>
+                    <a href="Trentplaceholder.html" class="Trent"><img src="Images/Trent.png" id="TrentMain" alt="Bild på Trent-Alexander Arnold"></a>
+                <div class="TrentInformation">
+                    <p>
+                        Land: England <img src="Images/England.png" alt="Bild på Englands flagga">
+                    </p>
+                    <p>
+                        Födelsedag: 98/10/07
+                    </p>
+                    <p>
+                        Position: Högerback
+                    </p>
+                    <p>
+                        Debut for LFC: 2016
+                    </p>
                 </div>
-
+            </div>
 
                 <div>
                     <div class="VVD4">Virgil van Dijk</div>
@@ -158,13 +180,11 @@
         </div>
     </div>
 
-
-
-
 </main>
 
-
-
+<!-- Footer som hamnar under main då det är det sista elementet på sidan. Här finns footer-text som innehåller
+     information om skaparen av sidan i en div, och i nästa div finns ett form där användare kan höra av sig
+     och ge förslag eller ställa frågor. -->
 
 <footer class="footerMain">
     <div class="footer-text">
@@ -179,21 +199,17 @@
                 <input type="text" id="fname" placeholder="Anders" required>
                 <br><br>
 
-
                 <label for="lname">Efteramn:</label>
                 <input type="text" id="lname" placeholder="Andersson" required>
                 <br><br>
-
 
                 <label for="mailadress">Mail:</label>
                 <input type="email" id="mailadress" placeholder="andersandersson@gmail.com" required>
                 <br><br>
 
-
                 <label for="comments">Kommentarer:</label>
                 <textarea id="comments" placeholder="Förslag:"></textarea>
                 <br><br>
-
 
                 <div class="konsVal-form">
                     <label for="Man">Man</label>
@@ -208,9 +224,6 @@
                     <input type="reset" id="reset">
                     <input type="submit">
                 </div>
-
-
-
 
             </form>
         </div>
