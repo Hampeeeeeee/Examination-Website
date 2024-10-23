@@ -1,0 +1,321 @@
+@font-face{
+    font-family:"AlbertusMTStd";
+    src: url(fonts/AlbertusMTStd.woff);
+}
+@font-face {
+    font-family:"Oswald";
+    src: url(https://fonts.googleapis.com);
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.helasidan{
+    background-image: url(Images/Egypten.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+main{
+    width: 100%;
+    display: flex;
+}
+.Sidebar{
+    height: 722px;
+    box-shadow: 5px 5px 10px black;
+    margin-right: 20px;
+}
+ul img{
+    box-shadow: 5px 5px 10px black;
+    border-radius: 50%;
+}
+.LFC-logo-sidebar{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 200px;
+    height: 300px;
+    filter: opacity(0.3) drop-shadow(0 0 0.75rem crimson);
+}
+li:hover{
+    border-radius: 5px;
+    background-color: #0d6efd;
+}
+.container{
+    width: 100%
+}
+.content{
+    text-align: center;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+}
+#miniLFCHeader{
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+#miniLFCHeader:hover{
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+h1{
+    margin-top: 12px;
+    font-size: 20px;
+}
+#anfieldHeader{
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+#anfieldHeader:hover{
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+.Salah-titel-namn{
+    font-family:"AlbertusMTStd";
+    background-color: black;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+h2{
+    color: rgb(246, 235, 97);
+    margin-top: 20px;
+}
+.klubb-information{
+    font-family:"AlbertusMTStd";
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.Al-Mokawloon-titel{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(246, 235, 97);
+    color: rgb(246, 235, 97);
+    flex: 1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.FC-Basel-titel{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(246, 235, 97);
+    color: rgb(246, 235, 97);
+    flex: 1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Chelsea-FC-titel{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(246, 235, 97);
+    color: rgb(246, 235, 97);
+    flex: 1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.AS-Roma-titel{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(246, 235, 97);
+    color: rgb(246, 235, 97);
+    flex: 1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Liverpool-titel{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(246, 235, 97);
+    color: rgb(246, 235, 97);
+    flex: 1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Al-Mokawloon-titel:hover{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+}
+.FC-Basel-titel:hover{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+}
+.Chelsea-FC-titel:hover{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+}
+.AS-Roma-titel:hover{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+}
+.Liverpool-titel:hover{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+}
+#Al-Mokawloon-Main{
+    background-color: rgb(192, 147, 0);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+#FC-Basel-Main{
+    background-color: rgb(192, 147, 0);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+#Chelsea-FC-Main{
+    background-color: rgb(192, 147, 0);;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    height: 200px;
+}
+#AS-Roma-Main{
+    background-color: rgb(192, 147, 0);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+#Liverpool-FC-Main{
+    background-color: rgb(192, 147, 0);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+.Al-Mokawloon-information{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 1;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 300px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px 10px black;
+}
+.Al-Mokawloon-information p{
+    padding-left: 15px;
+}
+.Al-Mokawloon-information img{
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+}
+.FC-Basel-information{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 1;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 300px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px 10px black;
+}
+.FC-Basel-information p{
+    padding-left: 15px;
+}
+.FC-Basel-information img{
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+}
+.Chelsea-FC-information{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 1;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 300px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px 10px black;
+}
+.Chelsea-FC-information p{
+    padding-left: 15px;
+}
+.Chelsea-FC-information img{
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+}
+.AS-Roma-information{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 1;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 300px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px 10px black;
+}
+.AS-Roma-information p{
+    padding-left: 15px;
+}
+.AS-Roma-information img{
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+}
+.Liverpool-information{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 1;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 300px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px 10px black;
+}
+.Liverpool-information p{
+    padding-left: 15px;
+}
+.Liverpool-information img{
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+}
+@media (max-width: 440px){
+    .Sidebar{
+        display: none;
+    }
+    .navigation{
+        display: none;
+    }
+    .klubb-information{
+        flex-direction: column;
+    }
+    .footerMain{
+        font-size: 0.7rem;
+    }
+}
