@@ -320,8 +320,8 @@ h2{
     }
 }
 @media (max-width: 1024px){
-    .Sidebar{
-        display: none;
-}
+    .namnDisplay{
+        flex-direction: column;
+    }
 }
 
